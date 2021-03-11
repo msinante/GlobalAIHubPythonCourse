@@ -32,7 +32,7 @@ CV5['Name']='Benazir'
 CV5['Surname']='Butto'
 CV5['Job']='Leader'
 
-CV_all = {**CV1, **CV2,**CV3,**CV4,**CV5} #I combined and printed all CV's in one dict type data
-for key, value in CV_all.items():
-    CV_all[key] = [value , CV1[key], CV2[key], CV3[key], CV4[key]]
+#I combined and printed all CV's in one dict type data
+for key,value in CV1.items():
+    CV_all[key] = [value, CV5[key], CV2[key], CV3[key], CV4[key]]
 print(CV_all)
